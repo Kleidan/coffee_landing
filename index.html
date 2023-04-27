@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts: 'Heebo' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Site Description -->
+  <meta name="description" content="Sign up with us to get a Free Coffee">
+
+  <title>קפה טוב לבוקר טוב</title>
+</head>
+
+<body>
+
+  <main class="wrapper">
+
+    <section class="landing">
+
+      <div class="landing__text">
+
+        <h1>קפה טוב לבוקר טוב</h1>
+        <p>לקבלת קופון לקפוצ'ינו חינם יש למלא את הפרטים</p>
+
+      </div>
+
+
+
+      <form class="landing__form" action="mailto:test@test.com" method="post">
+
+        <div>
+          <label for="fname">שם מלא</label><br>
+          <input type="text" name="fname" id="fname" minlength="2" maxlength="30" required>
+        </div>
+
+        <div>
+          <label for="mail">דוא"ל</label>
+          <br>
+          <input type="email" name="mail" id="mail" required dir="ltr">
+        </div>
+
+        <button type="submit">
+          שליחה
+        </button>
+
+      </form>
+
+
+
+    </section>
+
+    <div class="landing__img">
+      <img src="./assets/Coffee.webp" alt="">
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* ---------------------------------- */
+/* My custome values */
+
+:root {
+
+  --ff: 'Heebo', sans-serif;
+
+  --fw-n: 400;
+  --fw-b: 700;
+  --fw-bl: 900;
+
+  --fs-xl: 2.5rem;
+  --fs-l: 1.5rem;
+  --fs-m: 1.25rem;
+
+  --primary-clr: #020253;
+  --secondary-clr: #2C2C2C;
+  --input-clr: #F6F6F6;
+
+  --border: 1px solid #707070;
+
+  --space-1: 1.5rem;
+  --space-2: 2.6rem;
+  --space-3: 3.5rem;
+}
+
+/* ---------------------------------- */
+/* reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-m-n);
+  height: 100%;
+  color: var(--primary-clr);
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* ----------------------------------- */
+/* Layout */
+
+.wrapper {
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-inline: 1.5em;
+}
+
+.landing {
+  padding-top: var(--space-3);
+}
+
+@media screen and (min-width: 990px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    /* max-width: 1920px; */
+    width: 100%;
+  }
+
+  .landing {
+    margin-inline: auto;
+    padding-inline: var(--space-2);
+  }
+}
+
+/* ----------------------------------- */
+/* cosmetic */
+
+h1 {
+  font-weight: var(--fw-bl);
+  font-size: var(--fs-xl);
+  line-height: 1;
+  padding-bottom: var(--space-1);
+}
+
+p {
+  font-weight: var(--fw-n);
+  font-size: var(--fs-m);
+}
+
+label {
+  font-weight: var(--fw-b);
+}
+
+input {
+  border: none;
+  border-bottom: 4px solid var(--primary-clr);
+  background-color: var(--input-clr);
+  font-size: var(--fs-l);
+  font-weight: var(--fw-n);
+}
+
+form div {
+  padding-bottom: var(--space-1);
+}
+
+button {
+  padding: 0.5rem 3rem;
+  border-radius: none;
+  background-color: var(--primary-clr);
+  color: white;
+  font-size: var(--fs-m);
+  font-weight: var(--fw-b);
+}
+
+button:hover {
+  background-color: #020253ad;
+}
