@@ -108,6 +108,8 @@ input {
   background-color: var(--input-clr);
   font-size: var(--fs-l);
   font-weight: var(--fw-n);
+  line-height: 1;
+  padding: 2px;
 }
 
 form div {
