@@ -27,8 +27,8 @@
 /* ---------------------------------- */
 /* reset */
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -73,7 +73,6 @@ img {
   .wrapper {
     flex-direction: row;
     justify-content: space-between;
-    /* max-width: 1920px; */
     width: 100%;
   }
 
